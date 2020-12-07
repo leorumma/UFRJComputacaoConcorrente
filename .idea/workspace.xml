@@ -6,7 +6,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="adicionando tarefas">
+    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Atividade 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atividade5" beforeDir="false" afterPath="$PROJECT_DIR$/atividade5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atividade5.c" beforeDir="false" afterPath="$PROJECT_DIR$/atividade5.c" afterDir="false" />
@@ -45,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607375946694</updated>
-      <workItem from="1607375949863" duration="4232000" />
+      <workItem from="1607375949863" duration="5601000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -54,7 +54,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607376181402</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atividade 5">
+      <created>1607380197782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607380197782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionando tarefas" />
-    <option name="LAST_COMMIT_MESSAGE" value="adicionando tarefas" />
+    <MESSAGE value="Atividade 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atividade 5" />
   </component>
 </project>

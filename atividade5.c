@@ -4,7 +4,7 @@
 
 #define NTHREADS  2 //total de threads a serem criadas
 
-int vetor[50];
+int vetor[100];
 
 typedef struct {
     int posicaoInicial, posicaoFinal;
@@ -32,11 +32,17 @@ void *somarVetorEmUmaUnidade(void *arg) {
     for (int i = args->posicaoInicial; i < args->posicaoFinal; i++){
         vetor[i] += 1;
     }
+    free(arg); //aqui pode liberar a alocacao feita na main
+    pthread_exit(NULL);
 }
 
 void dividirVetor(){
     vetorArgs[0].posicaoInicial = 0;
-    vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()/NTHREADS;
+    if (calcularTamanhoDoVetor()%NTHREADS == 0){
+        vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()/NTHREADS;
+    } else{
+        vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()-1/NTHREADS;
+    }
     vetorArgs[1].posicaoInicial = vetorArgs[0].posicaoFinal;
     vetorArgs[1].posicaoFinal = calcularTamanhoDoVetor();
 }
