@@ -6,6 +6,11 @@
 
 int vetor[50];
 
+typedef struct {
+    int posicaoInicial, posicaoFinal;
+} t_Args;
+t_Args vetorArgs[2];
+
 int calcularTamanhoDoVetor(){
     return sizeof(vetor)/sizeof(vetor[0]);
 }
@@ -23,20 +28,42 @@ void imprimirValorDeCadaPosicaoDoVetor(){
 }
 
 void *somarVetorEmUmaUnidade(void *arg) {
-    for (int i = 0; i < calcularTamanhoDoVetor(); i++){
+    t_Args *args = (t_Args *) arg;
+    for (int i = args->posicaoInicial; i < args->posicaoFinal; i++){
         vetor[i] += 1;
     }
+}
+
+void dividirVetor(){
+    vetorArgs[0].posicaoInicial = 0;
+    vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()/NTHREADS;
+    vetorArgs[1].posicaoInicial = vetorArgs[0].posicaoFinal;
+    vetorArgs[1].posicaoFinal = calcularTamanhoDoVetor();
 }
 
 int main(){
     iniciarVetorComZeros();
     imprimirValorDeCadaPosicaoDoVetor();
     pthread_t tid_sistema[NTHREADS]; //identificadores das threads no sistema
+    dividirVetor();
     int thread; //variavel auxiliar
+    t_Args *arg; //receberá os argumentos para a thread
     for(thread=0; thread < NTHREADS; thread++) {
         printf("--Cria a thread %d\n", thread);
-        if (pthread_create(&tid_sistema[thread], NULL, somarVetorEmUmaUnidade,NULL)) {
+        arg = malloc(sizeof(t_Args));
+        if (arg == NULL) {
+            printf("--ERRO: malloc()\n"); exit(-1);
+        }
+        arg->posicaoInicial = vetorArgs[thread].posicaoInicial;
+        arg->posicaoFinal = vetorArgs[thread].posicaoFinal;
+        if (pthread_create(&tid_sistema[thread], NULL, somarVetorEmUmaUnidade,(void*) arg)) {
             printf("--ERRO: pthread_create()\n"); exit(-1);
+        }
+    }
+    //--espera todas as threads terminarem
+    for (thread=0; thread<NTHREADS; thread++) {
+        if (pthread_join(tid_sistema[thread], NULL)) {
+            printf("--ERRO: pthread_join() \n"); exit(-1);
         }
     }
     imprimirValorDeCadaPosicaoDoVetor();
