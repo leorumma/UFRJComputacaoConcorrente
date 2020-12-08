@@ -39,7 +39,7 @@ void *somarVetorEmUmaUnidade(void *arg) {
 void dividirVetor(){
     vetorArgs[0].posicaoInicial = 0;
     if (calcularTamanhoDoVetor()%NTHREADS == 0){
-        vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()/NTHREADS;
+        vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()/NTHREADS; // Para tratar de casos onde o tamanho do vetor é impar ou par
     } else{
         vetorArgs[0].posicaoFinal = calcularTamanhoDoVetor()-1/NTHREADS;
     }
@@ -66,7 +66,7 @@ int main(){
             printf("--ERRO: pthread_create()\n"); exit(-1);
         }
     }
-    //--espera todas as threads terminarem
+    //espera todas as threads terminarem
     for (thread=0; thread<NTHREADS; thread++) {
         if (pthread_join(tid_sistema[thread], NULL)) {
             printf("--ERRO: pthread_join() \n"); exit(-1);
