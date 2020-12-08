@@ -32,7 +32,7 @@ void *somarVetorEmUmaUnidade(void *arg) {
     for (int i = args->posicaoInicial; i < args->posicaoFinal; i++){
         vetor[i] += 1;
     }
-    free(arg); //aqui pode liberar a alocacao feita na main
+    free(arg); //liberar a alocacao feita na main
     pthread_exit(NULL);
 }
 
@@ -49,6 +49,7 @@ void dividirVetor(){
 
 int main(){
     iniciarVetorComZeros();
+    printf("----------------------------------------VALOR INICIAL DO VETOR:----------------------------------------\n");
     imprimirValorDeCadaPosicaoDoVetor();
     pthread_t tid_sistema[NTHREADS]; //identificadores das threads no sistema
     dividirVetor();
@@ -72,6 +73,7 @@ int main(){
             printf("--ERRO: pthread_join() \n"); exit(-1);
         }
     }
+    printf("----------------------------------------VALOR FINAL DO VETOR:----------------------------------------\n");
     imprimirValorDeCadaPosicaoDoVetor();
     printf("--Thread principal terminou\n");
     pthread_exit(NULL);
