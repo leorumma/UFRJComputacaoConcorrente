@@ -8,9 +8,6 @@
 float *matEntrada1;
 float *matEntrada2;
 float *matSaida;
-float *mat; //matriz de entrada
-float *vet; // vetor de entrada
-float *saida; // vetor de saida
 int nThreads; //numero de threads
 
 typedef struct{
@@ -25,7 +22,6 @@ void * tarefa(void *arg){
     for (int i = args->id; i < args->dim; i+=nThreads) {
         for (int j = 0; j < args->dim; j++) {
             matSaida[i * (args->dim) + j] += matEntrada1[i * (args->dim) + j] * matEntrada2[i * (args->dim) + j];
-            saida[i] += mat[i * (args->dim) + j] * vet[j];
         }
     }
     pthread_exit(NULL);
@@ -70,32 +66,15 @@ int main(int argc, char* argv[]){
         printf("ERRO--malloc\n");
         return 2;
     }
-    mat = (float *) malloc(sizeof(float) * dim * dim);
-    if (mat == NULL){
-        printf("ERRO--malloc\n");
-        return 2;
-    }
-    vet = (float *) malloc(sizeof(float) * dim);
-    if (vet == NULL){
-        printf("ERRO--malloc\n");
-        return 2;
-    }
-    saida = (float *) malloc(sizeof(float) * dim);
-    if (saida == NULL){
-        printf("ERRO--malloc\n");
-        return 2;
-    }
+
 
     //inicializar das estruturas de dados de entrada e saida
     for (int i = 0; i < dim; i++) {
         for (int j = 0; j < dim; j++) {
-            mat[i*dim+j] = 1; //ma[i][j]
             matEntrada2[i*dim+j] = 1;
             matEntrada1[i*dim+j] = 1;
             matSaida[i*dim+j] = 0;
         }
-        vet[i] = 1;
-        saida[i] = 0;
     }
     GET_TIME(fim);
     delta = fim - inicio;
@@ -157,9 +136,6 @@ int main(int argc, char* argv[]){
 
     //liberacao da memoria
     GET_TIME(inicio);
-    free(mat);
-    free(vet);
-    free(saida);
     free(matEntrada1);
     free(matEntrada2);
     free(matSaida);
