@@ -19,9 +19,13 @@ typedef struct{
 void * tarefa(void *arg){
     tArgs *args = (tArgs*) arg;
     printf("Thread %d\n", args->id);
-    for (int i = args->id; i < args->dim; i+=nThreads) {
-        for (int j = 0; j < args->dim; j++) {
-            matSaida[i * (args->dim) + j] += matEntrada1[i * (args->dim) + j] * matEntrada2[i * (args->dim) + j];
+    for (int i = args->id; i < args->dim; i+=nThreads) { // cada thread vai executar uma linha
+        for (int k = 0; k < args->dim ; k++) {
+            float soma = 0;
+            for (int j = 0; j < args->dim; j++) {
+                soma += matEntrada1[i * (args->dim) + j] * matEntrada2[j * (args->dim) + k];
+            }
+            matSaida[i * (args->dim) + k] = soma;
         }
     }
     pthread_exit(NULL);
