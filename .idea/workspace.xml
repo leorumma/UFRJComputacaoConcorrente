@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
@@ -7,8 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Atividade 5">
+      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula5.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula6.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atividade5.c" beforeDir="false" afterPath="$PROJECT_DIR$/atividade5.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +43,14 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,7 +60,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607375946694</updated>
-      <workItem from="1607375949863" duration="6941000" />
+      <workItem from="1607375949863" duration="7906000" />
+      <workItem from="1607390823484" duration="2000" />
+      <workItem from="1607442790452" duration="6000" />
+      <workItem from="1607975900886" duration="15639000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -74,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607389208779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Atividade 5">
+      <created>1607389826387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607389826387</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +116,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionando tarefas" />
