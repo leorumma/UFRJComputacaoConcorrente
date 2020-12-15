@@ -24,6 +24,7 @@ void * tarefa(void *arg){
     printf("Thread %d\n", args->id);
     for (int i = args->id; i < args->dim; i+=nThreads) {
         for (int j = 0; j < args->dim; j++) {
+            matSaida[i * (args->dim) + j] += matEntrada1[i * (args->dim) + j] * matEntrada2[i * (args->dim) + j];
             saida[i] += mat[i * (args->dim) + j] * vet[j];
         }
     }

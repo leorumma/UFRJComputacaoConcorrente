@@ -9,14 +9,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Atividade 5">
-      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula4.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula5.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Aula6.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="semana 2">
+      <change beforePath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +57,7 @@
       <workItem from="1607375949863" duration="7906000" />
       <workItem from="1607390823484" duration="2000" />
       <workItem from="1607442790452" duration="6000" />
-      <workItem from="1607975900886" duration="15639000" />
+      <workItem from="1607975900886" duration="17563000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -100,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607389826387</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="semana 2">
+      <created>1607992472514</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607992472514</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +112,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -121,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adicionando tarefas" />
     <MESSAGE value="Atividade 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atividade 5" />
+    <MESSAGE value="semana 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="semana 2" />
   </component>
 </project>
