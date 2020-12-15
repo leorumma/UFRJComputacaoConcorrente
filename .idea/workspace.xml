@@ -40,13 +40,6 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +51,8 @@
       <workItem from="1607375949863" duration="7906000" />
       <workItem from="1607390823484" duration="2000" />
       <workItem from="1607442790452" duration="6000" />
-      <workItem from="1607975900886" duration="20454000" />
+      <workItem from="1607975900886" duration="22180000" />
+      <workItem from="1608005823330" duration="1471000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -109,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607994731070</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="semana 2">
+      <created>1607997701355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607997701355</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
