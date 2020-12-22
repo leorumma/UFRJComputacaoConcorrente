@@ -9,16 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="semana 2">
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula4_Parte1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula4_Parte2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade2.c" afterDir="false" />
+    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Semana 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade2.c" beforeDir="false" afterPath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +59,7 @@
       <workItem from="1608314963260" duration="7000" />
       <workItem from="1608506785643" duration="19373000" />
       <workItem from="1608564797570" duration="13878000" />
-      <workItem from="1608593034983" duration="2940000" />
+      <workItem from="1608593034983" duration="9807000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -145,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608009925595</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Semana 3">
+      <created>1608596079757</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608596079757</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +179,7 @@
     <MESSAGE value="adicionando tarefas" />
     <MESSAGE value="Atividade 5" />
     <MESSAGE value="semana 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="semana 2" />
+    <MESSAGE value="Semana 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Semana 3" />
   </component>
 </project>

@@ -27,12 +27,8 @@ void * serieLeibnizConcorrente(void * arg){
     }
     *somaConcorrenteLocal = 0;
     ArgumentoSerieLeibnizConcorrente *argumentoSerieLeibnizConcorrente = (ArgumentoSerieLeibnizConcorrente *) arg;
-    printf("o Id eh %d \n", argumentoSerieLeibnizConcorrente->id);
-    printf("inicio: %lld \n", argumentoSerieLeibnizConcorrente->inicioSomatorio);
-    printf("fim: %lld \n", argumentoSerieLeibnizConcorrente->fimSomatorio);
     for (long long int i = argumentoSerieLeibnizConcorrente->inicioSomatorio; i < argumentoSerieLeibnizConcorrente->fimSomatorio; i++) {
         soma += (4 * pow(-1,i) /(2*i + 1));
-//        printf("%.15f \n", soma);
     }
     *somaConcorrenteLocal = soma;
     pthread_exit((void *) somaConcorrenteLocal);
@@ -67,11 +63,6 @@ int main(int argc, char *argv[]){
     GET_TIME(fim);
     printf("A funcao sequencial demorou %f  e obteve o valor aproximado de Pi igual a %.15f \n", (fim - inicio), piAproximadoSequencial);
     definirLimitesSequenciaConcorrente(argumentosSerieLeibnizConcorrente);
-    for (int i = 0; i < nthreads; i++) {
-        printf("argumento %d \n", argumentosSerieLeibnizConcorrente[i].id);
-        printf("%lld \n", argumentosSerieLeibnizConcorrente[i].inicioSomatorio);
-        printf("%lld \n", argumentosSerieLeibnizConcorrente[i].fimSomatorio);
-    }
     GET_TIME(inicio)
     for (int i = 0; i < nthreads; i++) {
         if (pthread_create(tid + i, NULL, serieLeibnizConcorrente, (void *) &argumentosSerieLeibnizConcorrente[i])){
@@ -104,14 +95,18 @@ double serieLeibnizSequencial(long long int limite){
 
 void definirLimitesSequenciaConcorrente(ArgumentoSerieLeibnizConcorrente *argumentosSerieLeibnizConcorrente){
     long long int tamanhoSequencia = limite/nthreads;
+    long long int resto = limite % nthreads;
+    long long int tamanhoSequenciaComRestoDistribuido = 0;
     for (int i = 0; i < nthreads; i++) {
+        long long int len = tamanhoSequencia;
         argumentosSerieLeibnizConcorrente[i].id = i;
-        argumentosSerieLeibnizConcorrente[i].inicioSomatorio = argumentosSerieLeibnizConcorrente[i].id * tamanhoSequencia;
-        if (argumentosSerieLeibnizConcorrente[i].id == nthreads - 1){
-            argumentosSerieLeibnizConcorrente[i].fimSomatorio = limite;
-        } else{
-            argumentosSerieLeibnizConcorrente[i].fimSomatorio = argumentosSerieLeibnizConcorrente[i].inicioSomatorio + tamanhoSequencia;
+        argumentosSerieLeibnizConcorrente[i].inicioSomatorio = tamanhoSequenciaComRestoDistribuido;
+        if (resto > 0){
+            len++;
+            resto--;
         }
+        tamanhoSequenciaComRestoDistribuido += len;
+        argumentosSerieLeibnizConcorrente[i].fimSomatorio = argumentosSerieLeibnizConcorrente[i].inicioSomatorio + len;
     }
 
 }
