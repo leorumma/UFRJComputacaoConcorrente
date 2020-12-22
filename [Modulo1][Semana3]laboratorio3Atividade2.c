@@ -5,17 +5,15 @@
 #include "timer.h"
 
 int nthreads;
-long long int limite;
 
 typedef struct {
     long long int inicioSomatorio;
     long long int fimSomatorio;
-    int id;
 }ArgumentoSerieLeibnizConcorrente;
 
 double serieLeibnizSequencial(long long int limite);
 
-void definirLimitesSequenciaConcorrente(ArgumentoSerieLeibnizConcorrente *argumentosSerieLeibnizConcorrente);
+void definirLimitesSequenciaConcorrente(ArgumentoSerieLeibnizConcorrente *argumentosSerieLeibnizConcorrente, long long int limite);
 
 void * serieLeibnizConcorrente(void * arg){
     double *somaConcorrenteLocal;
@@ -40,6 +38,7 @@ int main(int argc, char *argv[]){
     double piAproximadoSequencial;
     double piAproximadoConcorrente;
     double *retornoThread;
+    long long int limite;
     pthread_t *tid;
     if(argc<3){
         printf("Digite: %s <Limite do somatorio da serie de Leibniz> <numero de threads>\n", argv[0]);
@@ -62,7 +61,7 @@ int main(int argc, char *argv[]){
     piAproximadoSequencial = serieLeibnizSequencial(limite);
     GET_TIME(fim);
     printf("A funcao sequencial demorou %f  e obteve o valor aproximado de Pi igual a %.15f \n", (fim - inicio), piAproximadoSequencial);
-    definirLimitesSequenciaConcorrente(argumentosSerieLeibnizConcorrente);
+    definirLimitesSequenciaConcorrente(argumentosSerieLeibnizConcorrente, limite);
     GET_TIME(inicio)
     for (int i = 0; i < nthreads; i++) {
         if (pthread_create(tid + i, NULL, serieLeibnizConcorrente, (void *) &argumentosSerieLeibnizConcorrente[i])){
@@ -93,13 +92,12 @@ double serieLeibnizSequencial(long long int limite){
     return aproximacaoValorPi;
 }
 
-void definirLimitesSequenciaConcorrente(ArgumentoSerieLeibnizConcorrente *argumentosSerieLeibnizConcorrente){
+void definirLimitesSequenciaConcorrente(ArgumentoSerieLeibnizConcorrente *argumentosSerieLeibnizConcorrente, long long int limite){
     long long int tamanhoSequencia = limite/nthreads;
     long long int resto = limite % nthreads;
     long long int tamanhoSequenciaComRestoDistribuido = 0;
     for (int i = 0; i < nthreads; i++) {
         long long int len = tamanhoSequencia;
-        argumentosSerieLeibnizConcorrente[i].id = i;
         argumentosSerieLeibnizConcorrente[i].inicioSomatorio = tamanhoSequenciaComRestoDistribuido;
         if (resto > 0){
             len++;
