@@ -117,27 +117,27 @@ int main(int argc, char* argv[]){
     printf("Tempo multiplicacao:  %lf\n", delta);
 
     //exibicao dos resultados
-    puts("matriz de entrada1");
-    for (int i = 0; i < dim; i++) {
-        for (int j = 0; j < dim; j++) {
-            printf("%.lf ", matEntrada1[i*dim+j]);
-        }
-        puts("");
-    }
-    puts("matriz de entrada2");
-    for (int i = 0; i < dim; i++) {
-        for (int j = 0; j < dim; j++) {
-            printf("%.lf ", matEntrada2[i*dim+j]);
-        }
-        puts("");
-    }
-    puts("matriz de saida");
-    for (int i = 0; i < dim; i++) {
-        for (int j = 0; j < dim; j++) {
-            printf("%.lf ", matSaida[i*dim+j]);
-        }
-        puts("");
-    }
+//    puts("matriz de entrada1");
+//    for (int i = 0; i < dim; i++) {
+//        for (int j = 0; j < dim; j++) {
+//            printf("%.lf ", matEntrada1[i*dim+j]);
+//        }
+//        puts("");
+//    }
+//    puts("matriz de entrada2");
+//    for (int i = 0; i < dim; i++) {
+//        for (int j = 0; j < dim; j++) {
+//            printf("%.lf ", matEntrada2[i*dim+j]);
+//        }
+//        puts("");
+//    }
+//    puts("matriz de saida");
+//    for (int i = 0; i < dim; i++) {
+//        for (int j = 0; j < dim; j++) {
+//            printf("%.lf ", matSaida[i*dim+j]);
+//        }
+//        puts("");
+//    }
 
     //liberacao da memoria
     GET_TIME(inicio);

@@ -10,6 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="semana 2">
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula4_Parte1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]Aula4_Parte2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/[Modulo1_Semana2]Laboratorio_2.c" afterDir="false" />
     </list>
@@ -52,7 +59,14 @@
       <workItem from="1607390823484" duration="2000" />
       <workItem from="1607442790452" duration="6000" />
       <workItem from="1607975900886" duration="22180000" />
-      <workItem from="1608005823330" duration="4061000" />
+      <workItem from="1608005823330" duration="4928000" />
+      <workItem from="1608045990753" duration="1091000" />
+      <workItem from="1608171578353" duration="3127000" />
+      <workItem from="1608246724789" duration="8103000" />
+      <workItem from="1608314963260" duration="7000" />
+      <workItem from="1608506785643" duration="19373000" />
+      <workItem from="1608564797570" duration="13878000" />
+      <workItem from="1608593034983" duration="2940000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -124,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608009318196</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="semana 2">
+      <created>1608009925595</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608009925595</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
