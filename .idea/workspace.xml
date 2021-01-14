@@ -10,8 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Semana 3">
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/LeonardoRumaLab.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/byehello.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/hellobye.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/printX.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade2.c" beforeDir="false" afterPath="$PROJECT_DIR$/[Modulo1][Semana3]laboratorio3Atividade2.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +43,18 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Modulo2Semana1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,6 +75,7 @@
       <workItem from="1608506785643" duration="19373000" />
       <workItem from="1608564797570" duration="13878000" />
       <workItem from="1608593034983" duration="10653000" />
+      <workItem from="1610587444903" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
