@@ -15,6 +15,8 @@ int leit=0; //contador de threads lendo
 int escr=0; //contador de threads escrevendo
 int escritorEsperando = 0;
 int leitorEsperando = 0;
+int contVezesLeitor = 0;
+int contVezesEscritor = 0;
 
 //variaveis para sincronizacao
 pthread_mutex_t mutex;
@@ -38,8 +40,10 @@ void InicLeit (int id) {
     while(escr > 0) {
         printf("L[%d] bloqueou\n", id);
         pthread_cond_wait(&cond_leit, &mutex);
+        leitorEsperando++;
         printf("L[%d] desbloqueou\n", id);
     }
+    leitorEsperando--;
     leit++;
     pthread_mutex_unlock(&mutex);
     int acumulador = 0;
@@ -55,7 +59,7 @@ void FimLeit (int id) {
     pthread_mutex_lock(&mutex);
     printf("L[%d] terminou de ler\n", id);
     leit--;
-    if(leit==0) pthread_cond_signal(&cond_escr);
+    if(leit==0 || leitorEsperando == 0) pthread_cond_signal(&cond_escr);
     pthread_mutex_unlock(&mutex);
 }
 
@@ -63,7 +67,7 @@ void FimLeit (int id) {
 void InicEscr (int id) {
     pthread_mutex_lock(&mutex);
     printf("E[%d] quer escrever\n", id);
-    while((leit>0) || (escr>0)) {
+    while((leit>0) || (escr>0) || (leitorEsperando>0)) {
         printf("E[%d] bloqueou\n", id);
         pthread_cond_wait(&cond_escr, &mutex);
         printf("E[%d] desbloqueou\n", id);
@@ -84,7 +88,9 @@ void FimEscr (int id) {
     pthread_mutex_lock(&mutex);
     printf("E[%d] terminou de escrever\n", id);
     escr--;
-    pthread_cond_signal(&cond_escr);
+    if (leitorEsperando == 0 || leit == 0 ){
+        pthread_cond_signal(&cond_escr);
+    }
     pthread_cond_broadcast(&cond_leit);
     pthread_mutex_unlock(&mutex);
 }
