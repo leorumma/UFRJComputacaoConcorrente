@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include "timer.h"
+#include <unistd.h>
 
-int vetor[1000];
+int vetor[10];
 
 #define L 4 //numero de threads leitoras
 #define E 2 //numero de threads escritoras
@@ -39,6 +39,12 @@ void InicLeit (int id) {
     }
     leit++;
     pthread_mutex_unlock(&mutex);
+    int acumulador = 0;
+    for (int i = 0; i < calcularTamanhoVetor(); ++i) {
+        acumulador+= vetor[i];
+        printf("Leitor[%d]: Posição %d do vetor tem o valor %d \n ", id,i,vetor[i]);
+    }
+    printf("Leitor[%d]: A media dos valores do vetor é %d \n", id,(acumulador/2));
 }
 
 //saida leitura
@@ -60,6 +66,13 @@ void InicEscr (int id) {
         printf("E[%d] desbloqueou\n", id);
     }
     escr++;
+    for (int i = 0; i < calcularTamanhoVetor(); ++i) {
+        if (i == 0 || i == calcularTamanhoVetor() - 1) {
+            vetor[i] = id;
+            continue;
+        }
+        vetor[i] = 2 * id;
+    }
     pthread_mutex_unlock(&mutex);
 }
 
