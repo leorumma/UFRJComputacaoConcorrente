@@ -6,14 +6,16 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+      <configuration PROFILE_NAME="GCC" CONFIG_NAME="Debug" GENERATION_OPTIONS="-D CMAKE_C_COMPILER=/usr/bin/gcc" ENABLED="true" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Semana 3">
-      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/LeonardoRumaLab.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/byehello.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/hellobye.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo2Semana1/printX.c" afterDir="false" />
+    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="Modulo 2 Semana 1">
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/atividade1PrioridadeEscritores.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/atividade1PrioridadesIguais.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/atividade1SemPrioridades.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/barreira.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/leitesc.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -49,9 +51,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -75,7 +77,10 @@
       <workItem from="1608506785643" duration="19373000" />
       <workItem from="1608564797570" duration="13878000" />
       <workItem from="1608593034983" duration="10653000" />
-      <workItem from="1610587444903" duration="1302000" />
+      <workItem from="1610587444903" duration="1678000" />
+      <workItem from="1610685913388" duration="59000" />
+      <workItem from="1611100199717" duration="7208000" />
+      <workItem from="1611171787433" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -168,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608604772005</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Modulo 2 Semana 1">
+      <created>1610588872782</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610588872782</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +215,11 @@
     <MESSAGE value="Atividade 5" />
     <MESSAGE value="semana 2" />
     <MESSAGE value="Semana 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Semana 3" />
+    <MESSAGE value="Modulo 2 Semana 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo 2 Semana 1" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
