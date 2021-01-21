@@ -5,8 +5,8 @@
 
 int vetor[10];
 
-#define L 4 //numero de threads leitoras
-#define E 2 //numero de threads escritoras
+#define L 5 //numero de threads leitoras
+#define E 8 //numero de threads escritoras
 
 
 
@@ -128,8 +128,6 @@ int main(void){
     pthread_mutex_init(&mutex, NULL);
     pthread_cond_init(&cond_leit, NULL);
     pthread_cond_init(&cond_escr, NULL);
-
-
 
 
     //cria as threads leitoras
