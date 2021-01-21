@@ -118,11 +118,6 @@ int main(void){
     pthread_t tid[L+E];
     int id[L+E];
 
-    //inicializa as variaveis de sincronizacao
-    pthread_mutex_init(&mutex, NULL);
-    pthread_cond_init(&cond_leit, NULL);
-    pthread_cond_init(&cond_escr, NULL);
-
     //inicializa o vetor
     iniciarVetorComZeros();
 
@@ -130,6 +125,8 @@ int main(void){
     pthread_mutex_init(&mutex, NULL);
     pthread_cond_init(&cond_leit, NULL);
     pthread_cond_init(&cond_escr, NULL);
+
+
 
     //cria as threads leitoras
     for(int i=0; i<L; i++) {

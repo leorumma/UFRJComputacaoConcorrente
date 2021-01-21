@@ -37,10 +37,10 @@ void iniciarVetorComZeros(void){
 void InicLeit (int id) {
     pthread_mutex_lock(&mutex);
     printf("L[%d] quer ler\n", id);
+    leitorEsperando++;
     while(escr > 0) {
         printf("L[%d] bloqueou\n", id);
         pthread_cond_wait(&cond_leit, &mutex);
-        leitorEsperando++;
         printf("L[%d] desbloqueou\n", id);
     }
     leitorEsperando--;
@@ -59,7 +59,7 @@ void FimLeit (int id) {
     pthread_mutex_lock(&mutex);
     printf("L[%d] terminou de ler\n", id);
     leit--;
-    if(leit==0 || leitorEsperando == 0) pthread_cond_signal(&cond_escr);
+    if(leit==0 && leitorEsperando == 0) pthread_cond_signal(&cond_escr);
     pthread_mutex_unlock(&mutex);
 }
 
@@ -88,7 +88,7 @@ void FimEscr (int id) {
     pthread_mutex_lock(&mutex);
     printf("E[%d] terminou de escrever\n", id);
     escr--;
-    if (leitorEsperando == 0 || leit == 0 ){
+    if (leitorEsperando == 0 && leit == 0 ){
         pthread_cond_signal(&cond_escr);
     }
     pthread_cond_broadcast(&cond_leit);
@@ -127,11 +127,6 @@ int main(void){
     pthread_t tid[L+E];
     int id[L+E];
 
-    //inicializa as variaveis de sincronizacao
-    pthread_mutex_init(&mutex, NULL);
-    pthread_cond_init(&cond_leit, NULL);
-    pthread_cond_init(&cond_escr, NULL);
-
     //inicializa o vetor
     iniciarVetorComZeros();
 
@@ -139,6 +134,7 @@ int main(void){
     pthread_mutex_init(&mutex, NULL);
     pthread_cond_init(&cond_leit, NULL);
     pthread_cond_init(&cond_escr, NULL);
+
 
     //cria as threads leitoras
     for(int i=0; i<L; i++) {
