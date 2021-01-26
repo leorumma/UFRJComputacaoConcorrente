@@ -10,9 +10,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="inicio Modulo 2 Semana 2">
+    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="inicio Modulo 2 Semana 2 semPrioridades">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modulo2Semana2/atividade1SemPrioridades.c" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo2Semana2/atividade1SemPrioridades_Preferencia_Leitor.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <workItem from="1610587444903" duration="1678000" />
       <workItem from="1610685913388" duration="59000" />
       <workItem from="1611100199717" duration="7208000" />
-      <workItem from="1611171787433" duration="10700000" />
+      <workItem from="1611171787433" duration="23212000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -190,7 +189,49 @@
       <option name="project" value="LOCAL" />
       <updated>1611181884442</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="inicio Modulo 2 Semana 2 semPrioridades">
+      <created>1611183684193</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611183684193</updated>
+    </task>
+    <task id="LOCAL-00018" summary="inicio Modulo 2 Semana 2 semPrioridades">
+      <created>1611186659476</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611186659476</updated>
+    </task>
+    <task id="LOCAL-00019" summary="inicio Modulo 2 Semana 2 semPrioridades">
+      <created>1611187021629</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1611187021629</updated>
+    </task>
+    <task id="LOCAL-00020" summary="inicio Modulo 2 Semana 2 semPrioridades">
+      <created>1611193374833</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1611193374833</updated>
+    </task>
+    <task id="LOCAL-00021" summary="inicio Modulo 2 Semana 2 semPrioridades">
+      <created>1611196295540</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1611196295540</updated>
+    </task>
+    <task id="LOCAL-00022" summary="inicio Modulo 2 Semana 2 semPrioridades">
+      <created>1611196694199</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1611196694199</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +268,8 @@
     <MESSAGE value="Semana 3" />
     <MESSAGE value="Modulo 2 Semana 1" />
     <MESSAGE value="inicio Modulo 2 Semana 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicio Modulo 2 Semana 2" />
+    <MESSAGE value="inicio Modulo 2 Semana 2 semPrioridades" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicio Modulo 2 Semana 2 semPrioridades" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
