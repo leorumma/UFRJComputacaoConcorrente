@@ -79,7 +79,7 @@ void * leitor (void * arg) {
     pthread_exit(NULL);
 }
 
-//thread leitora
+//thread escritora
 void * escritor (void * arg) {
     int *id = (int *) arg;
     while(1) {

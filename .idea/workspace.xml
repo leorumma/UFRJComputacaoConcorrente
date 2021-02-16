@@ -10,16 +10,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="inicio Modulo 2 Semana 2 semPrioridades">
-      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo3Semana1/semaforo1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo3Semana1/semaforo2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo3Semana1/slide.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo3Semana2/atividade1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modulo3Semana2/atividade2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UFRJComputacaoConcorrente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UFRJComputacaoConcorrente.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="inicio Modulo 3 Semana 2 semaforo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +103,7 @@
       <workItem from="1613491680960" duration="136000" />
       <workItem from="1613493899979" duration="160000" />
       <workItem from="1613494522404" duration="297000" />
-      <workItem from="1613494848100" duration="5545000" />
+      <workItem from="1613494848100" duration="6404000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -275,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612245909654</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="inicio Modulo 3 Semana 2 semaforo">
+      <created>1613502267849</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1613502267849</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +312,8 @@
     <MESSAGE value="inicio Modulo 2 Semana 2" />
     <MESSAGE value="inicio Modulo 2 Semana 2 semPrioridades" />
     <MESSAGE value="Laboratorio 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laboratorio 7" />
+    <MESSAGE value="inicio Modulo 3 Semana 2 semaforo" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicio Modulo 3 Semana 2 semaforo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
