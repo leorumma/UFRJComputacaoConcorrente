@@ -11,6 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="332b8096-1b74-4894-9c62-3b86352a9e98" name="Default Changelist" comment="inicio Modulo 2 Semana 2 semPrioridades">
+      <change afterPath="$PROJECT_DIR$/Modulo2Semana2/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo3Semana1/semaforo1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo3Semana1/semaforo2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo3Semana1/slide.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo3Semana2/atividade1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modulo3Semana2/atividade2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UFRJComputacaoConcorrente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UFRJComputacaoConcorrente.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +32,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1lLUcoL73AuY0iBO8ud9pSvVhwJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -35,10 +50,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -46,9 +62,25 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -76,6 +108,11 @@
       <workItem from="1610685913388" duration="59000" />
       <workItem from="1611100199717" duration="7208000" />
       <workItem from="1611171787433" duration="23212000" />
+      <workItem from="1612245833577" duration="568000" />
+      <workItem from="1613491680960" duration="136000" />
+      <workItem from="1613493899979" duration="160000" />
+      <workItem from="1613494522404" duration="297000" />
+      <workItem from="1613494848100" duration="5545000" />
     </task>
     <task id="LOCAL-00001" summary="adicionando tarefas">
       <created>1607376181402</created>
@@ -231,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611196694199</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Laboratorio 7">
+      <created>1612245909654</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1612245909654</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +313,8 @@
     <MESSAGE value="Modulo 2 Semana 1" />
     <MESSAGE value="inicio Modulo 2 Semana 2" />
     <MESSAGE value="inicio Modulo 2 Semana 2 semPrioridades" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicio Modulo 2 Semana 2 semPrioridades" />
+    <MESSAGE value="Laboratorio 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laboratorio 7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
